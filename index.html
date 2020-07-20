@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realtime - chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-left">
+            <div class="container-insert-user">
+                <input type="text" id="nama" class="form-nama">
+                <button id="tambah" class="btn-nama">tambah</button>
+            </div>
+            <ul id="user" class="list-user">
+                <li>arifin</li>
+                <li>arnold</li>
+                <li>zoro</li>
+                <li>kaguya</li>
+                <li>shirogane</li>
+            </ul>
+        </div>
+        <div class="container-right">
+            <div class="chat-name">arifin</div>
+            <ul class="chat-content">
+                <li class="mychat">hello</li>
+                <div class="clearfix"></div>
+                <li class="yourchat">hi boy</li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="container-message">
+                <input type="text">
+                <button>kirim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="chatRealtimeDatabase.js"></script>
+</body>
+
+</html>
